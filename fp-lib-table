@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "pg1316")(type "KiCad")(uri "/Users/lad1337/workspace/zmk-config-mikefive/files")(options "")(descr "")(disabled))
+  (lib (name "wings")(type "KiCad")(uri "${KIPRJMOD}/wings")(options "")(descr ""))
+  (lib (name "Seeed Studio XIAO Series Library")(type "KiCad")(uri "/Users/lad1337/workspace/OPL_Kicad_Library/Seeed Studio XIAO Series Library")(options "")(descr "")(disabled))
+)
