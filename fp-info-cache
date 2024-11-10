@@ -1,4 +1,4 @@
-24963029505691014
+24923366768628133
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -92182,125 +92182,6 @@ rotary encoder illuminated switch vertical
 0
 9
 8
-Seeed Studio XIAO Series Library
-XIAO-Add-On
-
-
-0
-56
-14
-Seeed Studio XIAO Series Library
-XIAO-ESP32-C3-DIP
-
-
-0
-28
-14
-Seeed Studio XIAO Series Library
-XIAO-ESP32-C3-SMD
-
-
-0
-22
-22
-Seeed Studio XIAO Series Library
-XIAO-ESP32-C6-DIP
-
-
-0
-28
-14
-Seeed Studio XIAO Series Library
-XIAO-ESP32-C6-SMD
-
-
-0
-24
-24
-Seeed Studio XIAO Series Library
-XIAO-ESP32-S3-DIP
-
-
-0
-28
-14
-Seeed Studio XIAO Series Library
-XIAO-ESP32-S3-SMD
-
-
-0
-24
-24
-Seeed Studio XIAO Series Library
-XIAO-R4-DIP
-
-
-0
-58
-24
-Seeed Studio XIAO Series Library
-XIAO-R4-SMD
-
-
-0
-30
-30
-Seeed Studio XIAO Series Library
-XIAO-RP2040-DIP
-
-
-0
-28
-14
-Seeed Studio XIAO Series Library
-XIAO-RP2040-SMD
-
-
-0
-20
-20
-Seeed Studio XIAO Series Library
-XIAO-RP2350-DIP
-
-
-0
-58
-24
-Seeed Studio XIAO Series Library
-XIAO-RP2350-SMD
-
-
-0
-30
-30
-Seeed Studio XIAO Series Library
-XIAO-SAMD21-DIP
-
-
-0
-28
-14
-Seeed Studio XIAO Series Library
-XIAO-SAMD21-SMD
-
-
-0
-20
-20
-Seeed Studio XIAO Series Library
-XIAO-nRF52840-DIP
-
-
-0
-28
-14
-Seeed Studio XIAO Series Library
-XIAO-nRF52840-SMD
-
-
-0
-22
-22
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -100694,20 +100575,6 @@ lipo-reversible
 0
 2
 2
-lad1337
-wing-logo
-
-
-0
-0
-0
-pg1316
-CPG1316S01D02_mikeholscher
-
-
-0
-6
-3
 reversible-kicad-footprints
 5Way-K1-1506DN-01
 
@@ -101030,38 +100897,10 @@ test point plated hole
 0
 1
 1
-vendors
-CPG1316S01D02_mikeholscher
+wings
+wing-logo
 
 
 0
-6
-3
-vendors
-CPG1316S01D02_via
-
-
 0
-6
-3
-vendors
-Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM
-
-
 0
-20
-20
-vendors
-Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM-VIA
-
-
-0
-20
-20
-vendors
-XIAO-nRF52840-SMD-reversible
-
-
-0
-106
-20

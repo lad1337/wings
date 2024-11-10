@@ -1,0 +1,982 @@
+
+
+(kicad_pcb
+  (version 20240108)
+  (generator "ergogen")
+  (generator_version "4.1.0")
+  (general
+    (thickness 1.6)
+    (legacy_teardrops no)
+  )
+  (paper "A3")
+  (title_block
+    (title "wings")
+    (date "2024-11-10")
+    (rev "0.1")
+    (company "lad1337")
+  )
+
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (32 "B.Adhes" user "B.Adhesive")
+    (33 "F.Adhes" user "F.Adhesive")
+    (34 "B.Paste" user)
+    (35 "F.Paste" user)
+    (36 "B.SilkS" user "B.Silkscreen")
+    (37 "F.SilkS" user "F.Silkscreen")
+    (38 "B.Mask" user)
+    (39 "F.Mask" user)
+    (40 "Dwgs.User" user "User.Drawings")
+    (41 "Cmts.User" user "User.Comments")
+    (42 "Eco1.User" user "User.Eco1")
+    (43 "Eco2.User" user "User.Eco2")
+    (44 "Edge.Cuts" user)
+    (45 "Margin" user)
+    (46 "B.CrtYd" user "B.Courtyard")
+    (47 "F.CrtYd" user "F.Courtyard")
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+
+  (setup
+    (pad_to_mask_clearance 0.05)
+    (allow_soldermask_bridges_in_footprints no)
+    (pcbplotparams
+      (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
+      (disableapertmacros no)
+      (usegerberextensions no)
+      (usegerberattributes yes)
+      (usegerberadvancedattributes yes)
+      (creategerberjobfile yes)
+      (dashed_line_dash_ratio 12.000000)
+      (dashed_line_gap_ratio 3.000000)
+      (svgprecision 4)
+      (plotframeref no)
+      (viasonmask no)
+      (mode 1)
+      (useauxorigin no)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (pdf_front_fp_property_popups yes)
+      (pdf_back_fp_property_popups yes)
+      (dxfpolygonmode yes)
+      (dxfimperialunits yes)
+      (dxfusepcbnewfont yes)
+      (psnegative no)
+      (psa4output no)
+      (plotreference yes)
+      (plotvalue yes)
+      (plotfptext yes)
+      (plotinvisibletext no)
+      (sketchpadsonfab no)
+      (subtractmaskfromsilk no)
+      (outputformat 1)
+      (mirror no)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory "")
+    )
+  )
+
+  (net 0 "")
+(net 1 "P3")
+(net 2 "outer_bottom")
+(net 3 "outer_home")
+(net 4 "outer_top")
+(net 5 "outer_numbers")
+(net 6 "P2")
+(net 7 "pinky_bottom")
+(net 8 "pinky_home")
+(net 9 "pinky_top")
+(net 10 "pinky_numbers")
+(net 11 "P1")
+(net 12 "ring_bottom")
+(net 13 "ring_home")
+(net 14 "ring_top")
+(net 15 "ring_numbers")
+(net 16 "P0")
+(net 17 "middle_bottom")
+(net 18 "middle_home")
+(net 19 "middle_top")
+(net 20 "middle_numbers")
+(net 21 "P5")
+(net 22 "index_bottom")
+(net 23 "index_home")
+(net 24 "index_top")
+(net 25 "index_numbers")
+(net 26 "P4")
+(net 27 "inner_bottom")
+(net 28 "inner_home")
+(net 29 "inner_top")
+(net 30 "inner_numbers")
+(net 31 "near_bottom")
+(net 32 "home_bottom")
+(net 33 "home_top")
+(net 34 "far_bottom")
+(net 35 "far_top")
+(net 36 "P6")
+(net 37 "P7")
+(net 38 "P8")
+(net 39 "P9")
+(net 40 "P10")
+(net 41 "3V3")
+(net 42 "GND")
+(net 43 "5V")
+(net 44 "VIN")
+(net 45 "SWCLK")
+(net 46 "SWDIO")
+(net 47 "RST")
+
+  
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100 100 0)
+
+            
+            (fp_text reference "S1" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 1 "P3"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 2 "outer_bottom"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100 83 0)
+
+            
+            (fp_text reference "S2" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 1 "P3"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 3 "outer_home"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100 66 0)
+
+            
+            (fp_text reference "S3" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 1 "P3"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 4 "outer_top"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100 49 0)
+
+            
+            (fp_text reference "S4" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 1 "P3"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 5 "outer_numbers"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117 100 0)
+
+            
+            (fp_text reference "S5" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 7 "pinky_bottom"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117 83 0)
+
+            
+            (fp_text reference "S6" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 8 "pinky_home"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117 66 0)
+
+            
+            (fp_text reference "S7" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 9 "pinky_top"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117 49 0)
+
+            
+            (fp_text reference "S8" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 10 "pinky_numbers"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134 96 0)
+
+            
+            (fp_text reference "S9" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 12 "ring_bottom"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134 79 0)
+
+            
+            (fp_text reference "S10" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 13 "ring_home"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134 62 0)
+
+            
+            (fp_text reference "S11" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 14 "ring_top"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134 45 0)
+
+            
+            (fp_text reference "S12" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 15 "ring_numbers"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151 91 0)
+
+            
+            (fp_text reference "S13" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 16 "P0"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 17 "middle_bottom"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151 74 0)
+
+            
+            (fp_text reference "S14" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 16 "P0"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 18 "middle_home"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151 57 0)
+
+            
+            (fp_text reference "S15" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 16 "P0"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 19 "middle_top"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151 40 0)
+
+            
+            (fp_text reference "S16" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 16 "P0"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 20 "middle_numbers"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168 97 0)
+
+            
+            (fp_text reference "S17" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 22 "index_bottom"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168 80 0)
+
+            
+            (fp_text reference "S18" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 23 "index_home"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168 63 0)
+
+            
+            (fp_text reference "S19" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 24 "index_top"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168 46 0)
+
+            
+            (fp_text reference "S20" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 25 "index_numbers"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185 100 0)
+
+            
+            (fp_text reference "S21" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 27 "inner_bottom"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185 83 0)
+
+            
+            (fp_text reference "S22" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 28 "inner_home"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185 66 0)
+
+            
+            (fp_text reference "S23" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 29 "inner_top"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185 49 0)
+
+            
+            (fp_text reference "S24" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 30 "inner_numbers"))
+            (pad 3 smd rect (at 0 3.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 189 120 -30)
+
+            
+            (fp_text reference "S25" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 1 "P3"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 31 "near_bottom"))
+            (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 203.7224319 128.5 -30)
+
+            
+            (fp_text reference "S26" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 32 "home_bottom"))
+            (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 212.2224319 113.7775681 -30)
+
+            
+            (fp_text reference "S27" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 33 "home_top"))
+            (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 218.44486369999998 137 -30)
+
+            
+            (fp_text reference "S28" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 34 "far_bottom"))
+            (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:CPG1316S01D02_reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 226.94486369999998 122.2775681 -30)
+
+            
+            (fp_text reference "S29" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 35 "far_top"))
+            (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100.7 97.5 0)
+
+            
+            (fp_text reference "D1" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 2 "outer_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100.7 80.5 0)
+
+            
+            (fp_text reference "D2" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 3 "outer_home"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100.7 63.5 0)
+
+            
+            (fp_text reference "D3" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 4 "outer_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 100.7 46.5 0)
+
+            
+            (fp_text reference "D4" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 5 "outer_numbers"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117.7 97.5 0)
+
+            
+            (fp_text reference "D5" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 7 "pinky_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117.7 80.5 0)
+
+            
+            (fp_text reference "D6" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 8 "pinky_home"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117.7 63.5 0)
+
+            
+            (fp_text reference "D7" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 9 "pinky_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 117.7 46.5 0)
+
+            
+            (fp_text reference "D8" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 10 "pinky_numbers"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134.7 93.5 0)
+
+            
+            (fp_text reference "D9" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 12 "ring_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134.7 76.5 0)
+
+            
+            (fp_text reference "D10" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 13 "ring_home"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134.7 59.5 0)
+
+            
+            (fp_text reference "D11" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 14 "ring_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 134.7 42.5 0)
+
+            
+            (fp_text reference "D12" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 15 "ring_numbers"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151.7 88.5 0)
+
+            
+            (fp_text reference "D13" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 17 "middle_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151.7 71.5 0)
+
+            
+            (fp_text reference "D14" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 18 "middle_home"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151.7 54.5 0)
+
+            
+            (fp_text reference "D15" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 19 "middle_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151.7 37.5 0)
+
+            
+            (fp_text reference "D16" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 20 "middle_numbers"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168.7 94.5 0)
+
+            
+            (fp_text reference "D17" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 22 "index_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168.7 77.5 0)
+
+            
+            (fp_text reference "D18" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 23 "index_home"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168.7 60.5 0)
+
+            
+            (fp_text reference "D19" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 24 "index_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 168.7 43.5 0)
+
+            
+            (fp_text reference "D20" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 25 "index_numbers"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185.7 97.5 0)
+
+            
+            (fp_text reference "D21" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 27 "inner_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185.7 80.5 0)
+
+            
+            (fp_text reference "D22" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 28 "inner_home"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185.7 63.5 0)
+
+            
+            (fp_text reference "D23" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 29 "inner_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 185.7 46.5 0)
+
+            
+            (fp_text reference "D24" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 30 "inner_numbers"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 190.8562178 118.1849365 -30)
+
+            
+            (fp_text reference "D25" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 40 "P10"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 31 "near_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 205.5786497 126.6849365 -30)
+
+            
+            (fp_text reference "D26" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 40 "P10"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 32 "home_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 214.0786497 111.9625046 -30)
+
+            
+            (fp_text reference "D27" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 40 "P10"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 33 "home_top"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 220.30108149999998 135.1849365 -30)
+
+            
+            (fp_text reference "D28" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 40 "P10"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 34 "far_bottom"))
+            
+        )
+        
+
+        (footprint "lad1337:D_SOD-123-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 228.80108149999998 120.4625046 -30)
+
+            
+            (fp_text reference "D29" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 40 "P10"))
+            (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 35 "far_top"))
+            
+        )
+        
+
+        (footprint "lad1337:XIAO-nRF52840-SMD-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 151 115 180)
+
+            
+            (fp_text reference "MCUF1" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 16 "P0"))
+            (pad 2 smd rect (at 0 2.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 3 smd rect (at 0 3.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 4 smd rect (at 0 4.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 1 "P3"))
+            (pad 5 smd rect (at 0 5.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
+            (pad 6 smd rect (at 0 6.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
+            (pad 7 smd rect (at 0 7.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 36 "P6"))
+            (pad 8 smd rect (at 0 8.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 37 "P7"))
+            (pad 9 smd rect (at 0 9.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 38 "P8"))
+            (pad 10 smd rect (at 0 10.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 39 "P9"))
+            (pad 11 smd rect (at 0 11.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 40 "P10"))
+            (pad 12 smd rect (at 0 12.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 41 "3V3"))
+            (pad 13 smd rect (at 0 13.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
+            (pad 14 smd rect (at 0 14.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 43 "5V"))
+            (pad 15 smd rect (at 0 15.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
+            (pad 16 smd rect (at 0 16.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 44 "VIN"))
+            (pad 17 smd rect (at 0 17.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 45 "SWCLK"))
+            (pad 18 smd rect (at 0 18.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 46 "SWDIO"))
+            (pad 19 smd rect (at 0 19.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
+            (pad 20 smd rect (at 0 20.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 47 "RST"))
+            
+        )
+        
+
+        (footprint "lad1337:lipo-reversible" (layer F.Cu) (tedit 5B24D78E)
+            (at 95.504 39 0)
+
+            
+            (fp_text reference "battery1" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            
+            (pad 1 smd rect (at 0 1.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 44 "VIN"))
+            (pad 2 smd rect (at 0 2.5 0) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
+            
+        )
+        
+  (gr_line (start 137.3708018 125.7772449) (end 117.19630600833197 109.44551021150684) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 115.93790961764704 109) (end 92 109) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 91 108) (mid 91.2928932 108.7071068) (end 92 109) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 91 108) (end 91 30) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 92 29) (mid 91.2928932 29.2928932) (end 91 30) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 92 29) (end 159 29) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 159.3078203 29.0485555) (mid 159.1558132 29.0122135) (end 159 29) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 159.3078203 29.0485555) (end 193.3078203 40.0485555) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 194 40.9997531) (mid 193.8085745 40.4116061) (end 193.3078203 40.0485555) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 194 40.9997531) (end 194.01252343724795 91.71756099292543) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 195.01252333724875 93.44911799288936) (end 238.37306689999997 118.4833395) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 238.73909229999998 119.84936490000001) (mid 238.83899269999998 119.09054590000001) (end 238.37306689999997 118.48333950000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 238.7390923 119.8493649) (end 222.2390923 148.42820319999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 220.8730669 148.7942286) (mid 221.6318859 148.894129) (end 222.2390923 148.42820319999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 220.8730669 148.79422860000003) (end 181.7343474172952 126.19747832890053) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 180.73104921713 125.9295318287359) (end 138.0016491 125.9999986) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 137.3708018 125.7772449) (mid 137.6670447 125.9429426) (end 138.0016491 125.9999986) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 117.19630601764703 109.4455102) (mid 116.60537511764704 109.1146645) (end 115.93790961764704 109) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 194.01252343724798 91.71756099289068) (mid 194.280596037248 92.71728099289068) (end 195.01252333724798 93.44911799289068) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 181.7343474172952 126.19747832890053) (mid 181.2503924172952 125.99725132890053) (end 180.7310492172952 125.92953182890052) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+
+)
+

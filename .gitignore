@@ -1,3 +1,4 @@
 _autosave*
 wings-backups
-config/pcbs/production/backups/
+production/backups
+~wings.kicad_pcb.lck
