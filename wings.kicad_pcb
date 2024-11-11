@@ -29987,6 +29987,30 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "wings 0.1"
+		(at 113.03 31.75 0)
+		(layer "B.SilkS")
+		(uuid "667d156d-ad45-488a-942a-152e28d4fb26")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "wings 0.1"
+		(at 105.41 31.75 0)
+		(layer "F.SilkS")
+		(uuid "5cd44538-536c-4677-9fcf-7bf6e165a9e7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "On"
 		(at 129.54 30.48 0)
 		(layer "F.SilkS")
