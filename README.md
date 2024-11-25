@@ -28,8 +28,8 @@ use [enki 42 zmk firmware with n!n dongle](https://github.com/aroum/zmk-enki42-d
 - [x] Make it revsible
 - [x] Route the board
 - [x] Order keys and diods and hotplate
-- [ ] Santity check PCB
-- [ ] Order PCB
+- [x] Santity check PCB
+- [x] Order PCB
 - [ ] Solder
 
 ## Other
