@@ -74,8 +74,14 @@ points:
               skip: true
         home:
           key.col_net: P2
+          rows:
+            top:
+              col_net: P4
         far:
           key.col_net: P1
+          rows:
+            top:
+              col_net: P5
       rows:
         bottom:
           row_net: P10
