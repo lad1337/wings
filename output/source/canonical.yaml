@@ -1,0 +1,291 @@
+meta:
+    engine: 4.0.2
+    version: 0.1
+    author: lad1337
+units:
+    kx: 13
+    ky: 13.5
+    px: kx + 3
+    py: ky + 2.5
+    padding: 1
+    hkx: kx 0.5
+    hky: ky 0.5
+    hpx: px 0.5
+    hpy: py 0.5
+    cy: 21
+    cx: 17.78
+    cpx: -10
+    cpy: -18.5
+points:
+    key:
+        padding: px + padding
+        spread: py + padding
+    zones:
+        matrix:
+            anchor:
+                shift:
+                    - 100
+                    - -100
+            columns:
+                outer:
+                    key:
+                        col_net: P3
+                pinky:
+                    key:
+                        col_net: P2
+                ring:
+                    key:
+                        stagger: 4
+                        col_net: P1
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: P0
+                index:
+                    key:
+                        stagger: -6
+                        col_net: P5
+                inner:
+                    key:
+                        stagger: -3
+                        col_net: P4
+            rows:
+                bottom:
+                    row_net: P6
+                home:
+                    row_net: P7
+                top:
+                    row_net: P8
+                numbers:
+                    row_net: P9
+        thumb:
+            anchor:
+                ref: matrix_inner_bottom
+                rotate: -30
+                shift:
+                    - 4
+                    - -20
+            columns:
+                near:
+                    key:
+                        col_net: P3
+                    rows:
+                        top:
+                            skip: true
+                home:
+                    key:
+                        col_net: P2
+                    rows:
+                        top:
+                            col_net: P4
+                far:
+                    key:
+                        col_net: P1
+                    rows:
+                        top:
+                            col_net: P5
+            rows:
+                bottom:
+                    row_net: P10
+                top:
+                    row_net: P10
+outlines:
+    keys:
+        -
+            what: rectangle
+            where: true
+            asym: source
+            size:
+                - px
+                - py
+            corner: 1
+    controller:
+        -
+            what: rectangle
+            where:
+                ref: matrix_middle_bottom
+                shift:
+                    - 0
+                    - -24
+                rotate: 180
+            asym: source
+            size:
+                - cx
+                - cy
+            corner: 1
+    battery:
+        -
+            what: rectangle
+            where:
+                ref: matrix_outer_numbers
+                shift:
+                    - hpx + padding + 1
+                    - py - 2
+                rotate: 0
+            asym: source
+            size:
+                - 26
+                - 10
+            corner: 1
+    outline:
+        -
+            what: polygon
+            operation: stack
+            joints: round
+            expand: 1
+            fillet: 2
+            points:
+                -
+                    ref: matrix_middle_bottom
+                    shift:
+                        - '-py - 18'
+                        - '-py - 1'
+                -
+                    ref: matrix_outer_bottom
+                    shift:
+                        - '-hpx'
+                        - '-hpy'
+                -
+                    ref: matrix_outer_numbers
+                    shift:
+                        - '-hpx'
+                        - py + 3
+                -
+                    ref: matrix_middle_numbers
+                    shift:
+                        - hpx
+                        - hpy + 2
+                -
+                    ref: matrix_inner_numbers
+                    shift:
+                        - hpx
+                        - hpy
+                -
+                    ref: thumb_near_bottom
+                    shift:
+                        - -9.8
+                        - (hpy * 3) +1
+                -
+                    ref: thumb_far_top
+                    shift:
+                        - hpx
+                        - hpy
+                -
+                    ref: thumb_far_bottom
+                    shift:
+                        - hpx
+                        - '-hpy'
+                -
+                    ref: thumb_near_bottom
+                    shift:
+                        - '-hpx + 4'
+                        - '-hpy'
+                -
+                    ref: matrix_index_bottom
+                    shift:
+                        - -30
+                        - -28
+    overlap_check:
+        -
+            what: outline
+            name: keys
+        -
+            what: outline
+            name: outline
+            operation: add
+    combo:
+        -
+            name: outline
+        -
+            name: keys
+            operation: subtract
+        -
+            name: controller
+            operation: add
+        -
+            name: controller
+            operation: subtract
+        -
+            name: battery
+            operation: add
+        -
+            name: battery
+            operation: subtract
+pcbs:
+    wings:
+        template: kicad8
+        outlines:
+            main:
+                outline: outline
+        footprints:
+            keysF:
+                what: placeholder
+                where: true
+                params:
+                    designator: S
+                    footprint_id: 'lad1337:CPG1316S01D02_reversible'
+                    side: F
+                    nets:
+                        - '{{col_net}}'
+                        - '{{colrow}}'
+                        - ''
+            diodeF:
+                what: placeholder
+                where: true
+                params:
+                    designator: D
+                    footprint_id: 'lad1337:D_SOD-123-reversible'
+                    nets:
+                        - '{{row_net}}'
+                        - '{{colrow}}'
+                    side: F
+                adjust:
+                    shift:
+                        - 0.7
+                        - 2.5
+            xiaoF:
+                what: placeholder
+                params:
+                    designator: MCUF
+                    footprint_id: 'lad1337:XIAO-nRF52840-SMD-reversible'
+                    side: F
+                    nets:
+                        - P0
+                        - P1
+                        - P2
+                        - P3
+                        - P4
+                        - P5
+                        - P6
+                        - P7
+                        - P8
+                        - P9
+                        - P10
+                        - 3V3
+                        - GND
+                        - 5V
+                        - VIN
+                        - GND
+                        - SWCLK
+                        - SWDIO
+                        - GND
+                        - RST
+                where:
+                    ref: matrix_middle_bottom
+                    shift:
+                        - 0
+                        - -24
+                    rotate: 180
+            batteryF:
+                what: placeholder
+                where:
+                    ref: matrix_outer_numbers
+                    shift:
+                        - -4.496
+                        - ky - 3.5
+                params:
+                    designator: battery
+                    footprint_id: 'lad1337:lipo-reversible'
+                    nets:
+                        - VIN
+                        - GND

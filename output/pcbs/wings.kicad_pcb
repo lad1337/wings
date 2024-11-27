@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "wings")
-    (date "2024-11-10")
+    (date "2024-11-27")
     (rev "0.1")
     (company "lad1337")
   )
@@ -502,7 +502,7 @@
             (fp_text reference "S27" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
             (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
             
-            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 6 "P2"))
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
             (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 33 "home_top"))
             (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
             
@@ -530,7 +530,7 @@
             (fp_text reference "S29" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
             (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
             
-            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 11 "P1"))
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
             (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 35 "far_top"))
             (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
             
@@ -935,8 +935,8 @@
             (pad 12 smd rect (at 0 12.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 41 "3V3"))
             (pad 13 smd rect (at 0 13.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
             (pad 14 smd rect (at 0 14.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 43 "5V"))
-            (pad 15 smd rect (at 0 15.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
-            (pad 16 smd rect (at 0 16.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 44 "VIN"))
+            (pad 15 smd rect (at 0 15.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 44 "VIN"))
+            (pad 16 smd rect (at 0 16.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
             (pad 17 smd rect (at 0 17.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 45 "SWCLK"))
             (pad 18 smd rect (at 0 18.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 46 "SWDIO"))
             (pad 19 smd rect (at 0 19.5 180) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 42 "GND"))
