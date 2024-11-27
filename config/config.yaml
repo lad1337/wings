@@ -19,6 +19,9 @@ units:
   cpx: -10
   cpy: -18.5
 points:
+  # mirror:
+  #   ref: thumb_far_top
+  #   distance: 30
   key:
     padding: px + padding
     spread: py + padding
@@ -200,7 +203,7 @@ pcbs:
           nets: &MCU-nets [
             P0, P1, P2, P3, P4, P5, P6,
             P7, P8, P9, P10, 3V3, GND, 5V,
-            GND, VIN, 
+            VIN, GND, 
             SWCLK, SWDIO, GND, RST
           ]
         where:
