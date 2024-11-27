@@ -1,0 +1,13 @@
+file_format: "1"
+id: wings
+name: wings
+type: shield
+url: https://github.com/lad1337/wings
+requires: [seeeduino_xiao_ble]
+exposes: []
+features:
+  - keys
+siblings:
+  - wings_left
+  - wings_right
+  - wings_dongle

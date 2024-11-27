@@ -1,0 +1,20 @@
+// use https://nickcoutsos.github.io/keymap-editor/
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        base {
+            bindings = <
+&kp BSLH   &kp Y      &kp X     &kp C   &kp V   &kp B   &trans     &kp FSLH   &kp DOT  &kp COMMA  &kp M   &kp N
+&kp ESC    &kp A      &kp S     &kp D   &kp F   &kp G   &kp SQT    &kp SEMI   &kp L    &kp K      &kp J   &kp H
+&kp TAB    &kp Q      &kp W     &kp E   &kp R   &kp T   &kp LBKT   &kp P      &kp O    &kp I      &kp U   &kp Z
+&kp N1     &kp N2     &kp N3    &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp MINUS  &kp N0   &kp N9     &kp N8  &kp N7
+&kp SPACE  &kp LCTRL  &kp LGUI          &trans  &trans  &kp SPACE  &kp RSHFT  &kp RET             &trans  &trans
+            >;
+        };
+    };
+};
