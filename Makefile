@@ -13,7 +13,8 @@ ergo:
 	node $(ERGOGEN_ROOT)/src/cli.js --debug config -o ./output
 
 firmware: prepare_firmeware $(PARTS)
-	echo "Done"
+	@echo "Done"
+	@echo "Firmware located in firmware/"
 
 prepare_firmeware:
 	ln -fs $(PWD)/zmk/config/boards/shields/wings $(PWD)/$(ZMK_ROOT)/app/boards/shields/wings
