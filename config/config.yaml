@@ -79,12 +79,12 @@ points:
           key.col_net: P2
           rows:
             top:
-              col_net: P4
+              col_net: P5
         far:
           key.col_net: P1
           rows:
             top:
-              col_net: P5
+              col_net: P4
       rows:
         bottom:
           row_net: P10
@@ -203,7 +203,7 @@ pcbs:
           nets: &MCU-nets [
             P0, P1, P2, P3, P4, P5, P6,
             P7, P8, P9, P10, 3V3, GND, 5V,
-            VIN, GND, 
+            VIN, GND,
             SWCLK, SWDIO, GND, RST
           ]
         where:

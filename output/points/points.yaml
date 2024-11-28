@@ -2071,14 +2071,14 @@ thumb_near_bottom:
                         col_net: P2
                     rows:
                         top:
-                            col_net: P4
+                            col_net: P5
                     name: home
                 far:
                     key:
                         col_net: P1
                     rows:
                         top:
-                            col_net: P5
+                            col_net: P4
                     name: far
             rows:
                 bottom:
@@ -2140,14 +2140,14 @@ thumb_home_bottom:
                         col_net: P2
                     rows:
                         top:
-                            col_net: P4
+                            col_net: P5
                     name: home
                 far:
                     key:
                         col_net: P1
                     rows:
                         top:
-                            col_net: P5
+                            col_net: P4
                     name: far
             rows:
                 bottom:
@@ -2160,7 +2160,7 @@ thumb_home_bottom:
                 col_net: P2
             rows:
                 top:
-                    col_net: P4
+                    col_net: P5
             name: home
         row: bottom
         bind:
@@ -2193,7 +2193,7 @@ thumb_home_top:
         asym: both
         colrow: home_top
         name: thumb_home_top
-        col_net: P4
+        col_net: P5
         row_net: P10
         zone:
             columns:
@@ -2209,14 +2209,14 @@ thumb_home_top:
                         col_net: P2
                     rows:
                         top:
-                            col_net: P4
+                            col_net: P5
                     name: home
                 far:
                     key:
                         col_net: P1
                     rows:
                         top:
-                            col_net: P5
+                            col_net: P4
                     name: far
             rows:
                 bottom:
@@ -2229,7 +2229,7 @@ thumb_home_top:
                 col_net: P2
             rows:
                 top:
-                    col_net: P4
+                    col_net: P5
             name: home
         row: top
         bind:
@@ -2278,14 +2278,14 @@ thumb_far_bottom:
                         col_net: P2
                     rows:
                         top:
-                            col_net: P4
+                            col_net: P5
                     name: home
                 far:
                     key:
                         col_net: P1
                     rows:
                         top:
-                            col_net: P5
+                            col_net: P4
                     name: far
             rows:
                 bottom:
@@ -2298,7 +2298,7 @@ thumb_far_bottom:
                 col_net: P1
             rows:
                 top:
-                    col_net: P5
+                    col_net: P4
             name: far
         row: bottom
         bind:
@@ -2331,7 +2331,7 @@ thumb_far_top:
         asym: both
         colrow: far_top
         name: thumb_far_top
-        col_net: P5
+        col_net: P4
         row_net: P10
         zone:
             columns:
@@ -2347,14 +2347,14 @@ thumb_far_top:
                         col_net: P2
                     rows:
                         top:
-                            col_net: P4
+                            col_net: P5
                     name: home
                 far:
                     key:
                         col_net: P1
                     rows:
                         top:
-                            col_net: P5
+                            col_net: P4
                     name: far
             rows:
                 bottom:
@@ -2367,7 +2367,7 @@ thumb_far_top:
                 col_net: P1
             rows:
                 top:
-                    col_net: P5
+                    col_net: P4
             name: far
         row: top
         bind:

@@ -77,13 +77,13 @@ points:
                         col_net: P2
                     rows:
                         top:
-                            col_net: P4
+                            col_net: P5
                 far:
                     key:
                         col_net: P1
                     rows:
                         top:
-                            col_net: P5
+                            col_net: P4
             rows:
                 bottom:
                     row_net: P10

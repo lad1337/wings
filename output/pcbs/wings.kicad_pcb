@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "wings")
-    (date "2024-11-27")
+    (date "2024-11-28")
     (rev "0.1")
     (company "lad1337")
   )
@@ -502,7 +502,7 @@
             (fp_text reference "S27" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
             (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
             
-            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
             (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 33 "home_top"))
             (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
             
@@ -530,7 +530,7 @@
             (fp_text reference "S29" (at 0 0) (layer F.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15))))
             (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
             
-            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 21 "P5"))
+            (pad 1 smd rect (at 0 1.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 26 "P4"))
             (pad 2 smd rect (at 0 2.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 35 "far_top"))
             (pad 3 smd rect (at 0 3.5 -30) (size 0.2 0.2) (layers F.Cu F.Paste F.Mask) (net 0 ""))
             
